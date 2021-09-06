@@ -43,7 +43,7 @@ jobs:
         tags: ${{ secrets.DOCKER_USERNAME }}/yamdb:latest
 
   deploy:
-    reuns-on: ubuntu-latest
+    runs-on: ubuntu-latest
     needs: builde_and_push_to_docker_hub
     steps:
     - name: executing remote ssh commands to deploy
