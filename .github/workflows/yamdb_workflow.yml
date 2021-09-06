@@ -67,7 +67,7 @@ jobs:
           echo DB_PORT=${{ secrets.DB_PORT }} >> .env
           echo SECRET_KEY=${{ secrets.SECRET_KEY }} >> .env
           echo DEBAG=${{ secrets.DEBAG }} >> .env
-          echo ALLOWED_HOSTS=${{ secrets.ALLOWED_HOSTS }} >> .env
+          echo ALLOWED_HOSTS=${{ secrets.HOST }} >> .env
           echo EMAIL_ADDRESS=${{ secrets.EMAIL_ADDRESS }} >> .env
           sudo docker-compose up -d
 
