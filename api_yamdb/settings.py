@@ -13,7 +13,11 @@ SECRET_KEY = config(
 
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='84.201.130.43', cast=Csv())
+ALLOWED_HOSTS = config(
+    'ALLOWED_HOSTS',
+    default=['84.201.130.43', 'localhost', '127.0.0.1', 'web'],
+    cast=Csv()
+)
 
 INSTALLED_APPS = [
     'django.contrib.admin',
