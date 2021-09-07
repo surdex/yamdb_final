@@ -2,7 +2,7 @@ import os
 
 from datetime import timedelta
 
-from decouple import config
+from decouple import Csv, config
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -13,13 +13,7 @@ SECRET_KEY = config(
 
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = [
-    '84.201.130.43',
-    'localhost',
-    '127.0.0.1',
-    'web'
-]
-
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='84.201.130.43', cast=Csv())
 
 INSTALLED_APPS = [
     'django.contrib.admin',

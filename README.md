@@ -1,5 +1,7 @@
 ![example workflow](https://github.com/surdex/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
+### Развёрнутый сервер - http://84.201.130.43/
+
 # Контейнеризация и развёртывание на сервере учебного проекта API сервиса YaMDb с помощью Docker.
 
 Проект собирает отзывы пользователей о фильмах, книгах, музыке и др., которым можно присваивать жанр.
